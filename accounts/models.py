@@ -39,6 +39,7 @@ class MyAccountManager(BaseUserManager):
         user.is_superuser = False
         user.is_staff = False
         user.save(using=self._db)
+        return user
 
     def create_customer(self, first_name, last_name, email, password=None):
         user = self.create_user(email=email, password=password,
