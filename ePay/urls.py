@@ -9,6 +9,7 @@ urlpatterns = [
     # App Level Imported URLs ...
     path('api/users/', include('accounts.urls')),
     path('api/vendor/', include('vendor.urls')),
+    path('api/tags/', include('tags.urls')),
     path('api/customer/', include('customer.urls')),
 
     # Token for User Token Manipulation
